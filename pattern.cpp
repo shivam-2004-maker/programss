@@ -1,25 +1,27 @@
-#include<iostream> 
+#include<iostream>
 using namespace std;
+
 int main() {
 
-int n;
-cin>>n;
-int i =1;
-while(i<=n){
-    int j=1;
-    while(j<=n){
+    int n;
+    cin >> n;   // Take input for size of square
 
-        cout<<" *";
-        j = j+1;
+    int i = 1;  // Outer loop counter (rows)
 
+    // Loop for rows
+    while(i <= n) {
+
+        int j = 1;  // Inner loop counter (columns)
+
+        // Loop for columns
+        while(j <= n) {
+            cout << "* ";   // Print star with space
+            j = j + 1;      // Move to next column
+        }
+
+        cout << endl;  // Move to next line after one row
+        i = i + 1;     // Move to next row
     }
-cout<< endl;
-i=i+1;
 
-
-}
-
-
-
-
+    return 0;  // Program ends successfully
 }
